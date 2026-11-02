@@ -117,4 +117,12 @@ $(document).ready(function () {
     $("#linkInfo").text("Current link: " + $("#socialLink").attr("href"));
   });
 
+  $("#nameInput").on("input", function () {
+    $("#namePreview").text($(this).val());
+  });
+
+  $("#emailInput").on("input", function () {
+    $("#emailPreview").text($(this).val());
+  });
+
 });

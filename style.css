@@ -110,6 +110,31 @@ h2 {
   color: #2b6cb0;
 }
 
+.form-input {
+  display: block;
+  width: 300px;
+  padding: 8px 12px;
+  margin: 5px 0 15px;
+  border: 1px solid #dde3ea;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#contactForm label {
+  font-weight: bold;
+}
+
+#preview {
+  padding: 10px 15px;
+  border-left: 4px solid #2b6cb0;
+  background-color: rgba(43, 108, 176, 0.08);
+  border-radius: 6px;
+}
+
+#preview span {
+  font-weight: bold;
+}
+
 #skillMsg {
   color: #e53e3e;
   min-height: 20px;

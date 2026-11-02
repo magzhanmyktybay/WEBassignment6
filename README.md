@@ -34,3 +34,11 @@ I added a social media link to my GitHub profile. The button changes the link's 
 ### Task 7 Form Interaction
 ![Live form preview](images/image14.png)
 I created a form with Name and Email inputs. While the user types, the entered data is displayed live below the form. On every `input` event the value is read with `.val()` and inserted into the preview with `.text()`.
+## Part 4 Animations
+### Task 8 Basic Animation
+![Skill bars at zero](images/image15.png)
+![Animated skill bars](images/image16.png)
+I extended Task 5 with skill bars for four skills: HTML, CSS, JavaScript and jQuery. Initially the bars have zero width. The "Animate My Skills" button uses `.animate()` to increase the width of each bar to its own level (85%, 75%, 60%, 55%), which is stored in the `data-level` attribute. When the button is clicked again, the bars are animated back to zero width.
+
+## Summary
+In this assignment I built a personal portfolio page with jQuery. I used selectors and `.css()` to style elements, effects (`hide/show/toggle`, `fade`, `slide`) to control visibility, DOM manipulation (`append`, `prepend`, `remove`, `attr`, `val`) to change the page content, and `.animate()` to create skill bars.

@@ -90,3 +90,21 @@ h2 {
 #favorites .btn {
   margin-top: 15px;
 }
+
+#skillsList li {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+#skillInput {
+  padding: 8px 12px;
+  border: 1px solid #dde3ea;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 200px;
+}
+
+#skillMsg {
+  color: #e53e3e;
+  min-height: 20px;
+}

@@ -61,4 +61,46 @@ $(document).ready(function () {
     $(".panel").slideUp(400);
   });
 
+  function getSkill() {
+    var skill = $("#skillInput").val().trim();
+    if (skill === "") {
+      $("#skillMsg").text("Please enter a skill.");
+      return null;
+    }
+    $("#skillMsg").text("");
+    return skill;
+  }
+
+  $("#addSkillBtn").click(function () {
+    var skill = getSkill();
+    if (skill) {
+      $("#skillsList").append("<li>" + skill + "</li>");
+      $("#skillInput").val("");
+    }
+  });
+
+  $("#prependSkillBtn").click(function () {
+    var skill = getSkill();
+    if (skill) {
+      $("#skillsList").prepend("<li>" + skill + "</li>");
+      $("#skillInput").val("");
+    }
+  });
+
+  $("#removeSkillBtn").click(function () {
+    var skill = getSkill();
+    if (skill) {
+      var found = $("#skillsList li").filter(function () {
+        return $(this).text().toLowerCase() === skill.toLowerCase();
+      });
+
+      if (found.length > 0) {
+        found.remove();
+        $("#skillInput").val("");
+      } else {
+        $("#skillMsg").text("Skill \"" + skill + "\" not found.");
+      }
+    }
+  });
+
 });

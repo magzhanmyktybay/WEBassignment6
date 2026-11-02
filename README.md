@@ -22,3 +22,8 @@ I created a gallery with two images: my photo and a picture about games. Three b
 ![One panel opened](images/image8.png)
 ![All panels opened](images/image9.png)
 I created three clickable headings: "My Favorite Music", "My Favorite Movie" and "My Favorite Subject". Each heading has a collapsible panel beneath it. Clicking a heading opens or closes its panel with `.slideToggle()`. The "Open All" button uses `.slideDown()` to open all panels, and the "Close All" button uses `.slideUp()` to close them.
+## Part 3 DOM Manipulation with jQuery
+### Task 5 Add & Remove Elements
+![Initial skills list](images/image10.png)
+![Changed skills list](images/image11.png)
+I created a list of four technical skills (HTML, CSS, JavaScript, jQuery) and a text input for a new skill. The "Add Skill" button uses `.append()` to add the skill to the end of the list, and "Prepend Skill" uses `.prepend()` to add it to the beginning. The "Remove Skill" button finds the skill with the same name as in the input and deletes it with `.remove()`. The input value is read with `.val()` and `.trim()`, so empty skills cannot be added.

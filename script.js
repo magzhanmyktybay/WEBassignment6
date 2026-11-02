@@ -125,4 +125,20 @@ $(document).ready(function () {
     $("#emailPreview").text($(this).val());
   });
 
+  var skillsShown = false;
+
+  $("#animateBtn").click(function () {
+    if (!skillsShown) {
+      $(".fill").each(function () {
+        var level = $(this).attr("data-level");
+        $(this).stop().animate({ width: level + "%" }, 1000);
+      });
+      $(this).text("Reset Skills");
+    } else {
+      $(".fill").stop().animate({ width: "0%" }, 1000);
+      $(this).text("Animate My Skills");
+    }
+    skillsShown = !skillsShown;
+  });
+
 });

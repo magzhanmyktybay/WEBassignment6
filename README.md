@@ -31,3 +31,6 @@ I created a list of four technical skills (HTML, CSS, JavaScript, jQuery) and a 
 ![GitHub link](images/image12.png)
 ![Telegram link](images/image13.png)
 I added a social media link to my GitHub profile. The button changes the link's destination with `.attr("href", ...)` to my Telegram, and clicking it again switches back to GitHub. The current link is read with `.attr("href")` and displayed below.
+### Task 7 Form Interaction
+![Live form preview](images/image14.png)
+I created a form with Name and Email inputs. While the user types, the entered data is displayed live below the form. On every `input` event the value is read with `.val()` and inserted into the preview with `.text()`.

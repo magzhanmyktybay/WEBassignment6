@@ -14,3 +14,7 @@ The page shows my name, headline and a short introduction, plus a "Welcome to My
 ![Shown About Me](images/image4.png)
 ![Hidden About Me](images/image5.png)
 I created an "About Me" section with a short biography, a status message "Currently learning jQuery!" and a list of fun facts and goals (favorite game, favorite programming language, sports and my career goal). Three buttons control the visibility of the status message and fun facts: `.hide()` hides them, `.show()` shows them again, and `.toggle()` switches between hidden and visible. I passed the "slow" parameter to make the effect smooth. Both elements are selected at once with `$("#status, #funFacts")`.
+### Task 3 Fade Methods
+![Fade in](images/image6.png)
+![Fade out](images/image7.png)
+I created a gallery with two images: my photo and a picture about games. Three buttons control the visibility of the images: `.fadeIn()` smoothly shows them, `.fadeOut()` smoothly hides them, and `.fadeToggle()` switches between the two states. The duration is set to 800 milliseconds to make the effect smooth.

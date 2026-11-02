@@ -4,41 +4,40 @@
 ## Part 1 Getting started by JQuery
 ### Task 0 Setup
 ![Setup JQuery](images/image1.png)
-We included JQuery by CDN and checked that DOM is fully rendered, at which point it invokes function, that prints "jQuery is ready!" to the console.
+I included JQuery by CDN and checked that DOM is fully rendered, at which point it invokes function, that prints "jQuery is ready!" to the console.
 ### Task 1 Selectors & CSS
 ![Porfolia light theme](images/image2.png)
 ![Porfolio dark theme](images/image3.png)
-The page shows my name, headline and a short introduction, plus a "Welcome to My Portfolio" section. I used three types of jQuery selectors: tag (`h2`), ID (`#headline`, `#greeting`) and class (`.intro`). The headline is changed with `.text()` and the greeting with `.html()`. The `.css()` method changes the color of all `h2` headings and the font size of `.intro` paragraphs. Two buttons switch between light and dark themes: on `.click()` they use `.css()` to change the colors of the `body` and all `.card` elements.
+My name, headline and an introductory statement can be seen in this page along with a "Welcome to My Portfolio" section. The jQuery selectors used include three different categories – tag (`h2`), ID (`#headline`, `#greeting`) and class (`.intro`). The modification of the headline has been done using `.text()` whereas the greeting has been modified using `.html()`. The color of all `h2` tags and the font-size of `.intro` tags have been changed using `.css()`. Light and dark themes can be toggled using the two buttons using `.css()` on `.click()`.
 ## Part 2 jQuery Effects
 ### Task 2 Visibility Methods
 ![Shown About Me](images/image4.png)
 ![Hidden About Me](images/image5.png)
-I created an "About Me" section with a short biography, a status message "Currently learning jQuery!" and a list of fun facts and goals (favorite game, favorite programming language, sports and my career goal). Three buttons control the visibility of the status message and fun facts: `.hide()` hides them, `.show()` shows them again, and `.toggle()` switches between hidden and visible. I passed the "slow" parameter to make the effect smooth. Both elements are selected at once with `$("#status, #funFacts")`.
+I made an "About Me" portion that included a brief biography, a status message that says "Currently learning jQuery!" and fun facts and goals (my favorite video game, my favorite programming language, sports and my career goal). Three buttons were made to display or hide the status message and fun facts: `.hide()` to hide the message, `.show()` to display it again and `.toggle()` to switch between displaying and hiding it. I used the "slow" parameter in order to get a better effect.
 ### Task 3 Fade Methods
 ![Fade in](images/image6.png)
 ![Fade out](images/image7.png)
-I created a gallery with two images: my photo and a picture about games. Three buttons control the visibility of the images: `.fadeIn()` smoothly shows them, `.fadeOut()` smoothly hides them, and `.fadeToggle()` switches between the two states. The duration is set to 800 milliseconds to make the effect smooth.
+I made a gallery of two pictures, my photo and the one related to games. There are three buttons that enable me to show/hide the pictures: `.fadeIn()` to show them, `.fadeOut()` to hide them and `.fadeToggle()` to change between these two. The time of the action lasts 800 ms.
 ### Task 4 Slide Methods
 ![One panel opened](images/image8.png)
 ![All panels opened](images/image9.png)
-I created three clickable headings: "My Favorite Music", "My Favorite Movie" and "My Favorite Subject". Each heading has a collapsible panel beneath it. Clicking a heading opens or closes its panel with `.slideToggle()`. The "Open All" button uses `.slideDown()` to open all panels, and the "Close All" button uses `.slideUp()` to close them.
+I made clickable headings named “My Favorite Music”, “My Favorite Movie” and “My Favorite Subject”. Every one of them has a panel which can be closed or opened. By clicking on one of the headings, its panel will be opened or closed by using `.slideToggle()`. “Open All” button opens all panels by using `.slideDown()` function and “Close All” does the same thing by using `.slideUp()` function.
 ## Part 3 DOM Manipulation with jQuery
 ### Task 5 Add & Remove Elements
 ![Initial skills list](images/image10.png)
 ![Changed skills list](images/image11.png)
-I created a list of four technical skills (HTML, CSS, JavaScript, jQuery) and a text input for a new skill. The "Add Skill" button uses `.append()` to add the skill to the end of the list, and "Prepend Skill" uses `.prepend()` to add it to the beginning. The "Remove Skill" button finds the skill with the same name as in the input and deletes it with `.remove()`. The input value is read with `.val()` and `.trim()`, so empty skills cannot be added.
+A list of technical skills has been made containing HTML, CSS, JavaScript, and jQuery, while the fifth is a text box for entering a new skill. The button "Add Skill" adds the entered skill at the end of the list using `.append()`, and the button "Prepend Skill" adds the skill at the start of the list using `.prepend()`. The button "Remove Skill" searches for the skill that has the same name as the skill entered in the text box and removes it using `.remove()`.
 ### Task 6 Modifying Attributes
 ![GitHub link](images/image12.png)
 ![Telegram link](images/image13.png)
-I added a social media link to my GitHub profile. The button changes the link's destination with `.attr("href", ...)` to my Telegram, and clicking it again switches back to GitHub. The current link is read with `.attr("href")` and displayed below.
+A social media URL has been added to my GitHub page. It updates the URL to point to my Telegram through `attr("href", ...)`, and upon being clicked again, redirects the URL back to my GitHub. The current URL is obtained through `attr("href")`.
 ### Task 7 Form Interaction
 ![Live form preview](images/image14.png)
-I created a form with Name and Email inputs. While the user types, the entered data is displayed live below the form. On every `input` event the value is read with `.val()` and inserted into the preview with `.text()`.
+I have used a form containing Name and Email. As the user enters his name and email in the form, what he types gets displayed in real time below the form by using .val() and .text() functions.
 ## Part 4 Animations
 ### Task 8 Basic Animation
 ![Skill bars at zero](images/image15.png)
 ![Animated skill bars](images/image16.png)
-I extended Task 5 with skill bars for four skills: HTML, CSS, JavaScript and jQuery. Initially the bars have zero width. The "Animate My Skills" button uses `.animate()` to increase the width of each bar to its own level (85%, 75%, 60%, 55%), which is stored in the `data-level` attribute. When the button is clicked again, the bars are animated back to zero width.
-
+I extended Task 5 with skill bars for four skills: HTML, CSS, JavaScript and jQuery. These bars begin at zero width initially. The “Animate My Skills” button employs the `.animate()` method to expand these bars to their own widths (85%, 75%, 60%, 55%). These widths are defined in the data-level attribute. Upon clicking the button again, these bars will animate back to their initial width.
 ## Summary
-In this assignment I built a personal portfolio page with jQuery. I used selectors and `.css()` to style elements, effects (`hide/show/toggle`, `fade`, `slide`) to control visibility, DOM manipulation (`append`, `prepend`, `remove`, `attr`, `val`) to change the page content, and `.animate()` to create skill bars.
+For this assignment, I created my personal portfolio page using jQuery. I made use of selectors and .css() method to style elements, effects such as `hide/show/toggle`, `fade`, and `slide` for visibility, DOM manipulation methods such as `append`, `prepend`, `remove`, `attr`, `val` for changing the page content and `.animate()` for skill bars.

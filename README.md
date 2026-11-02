@@ -18,3 +18,7 @@ I created an "About Me" section with a short biography, a status message "Curren
 ![Fade in](images/image6.png)
 ![Fade out](images/image7.png)
 I created a gallery with two images: my photo and a picture about games. Three buttons control the visibility of the images: `.fadeIn()` smoothly shows them, `.fadeOut()` smoothly hides them, and `.fadeToggle()` switches between the two states. The duration is set to 800 milliseconds to make the effect smooth.
+### Task 4 Slide Methods
+![One panel opened](images/image8.png)
+![All panels opened](images/image9.png)
+I created three clickable headings: "My Favorite Music", "My Favorite Movie" and "My Favorite Subject". Each heading has a collapsible panel beneath it. Clicking a heading opens or closes its panel with `.slideToggle()`. The "Open All" button uses `.slideDown()` to open all panels, and the "Close All" button uses `.slideUp()` to close them.

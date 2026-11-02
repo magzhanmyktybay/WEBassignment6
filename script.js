@@ -49,4 +49,16 @@ $(document).ready(function () {
     $(".photo").fadeToggle(800);
   });
 
+  $(".panel-heading").click(function () {
+    $(this).next(".panel").slideToggle(400);
+  });
+
+  $("#slideDownBtn").click(function () {
+    $(".panel").slideDown(400);
+  });
+
+  $("#slideUpBtn").click(function () {
+    $(".panel").slideUp(400);
+  });
+
 });

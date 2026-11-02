@@ -65,3 +65,28 @@ h2 {
 .btn:hover {
   background-color: #2c5282;
 }
+
+.panel-heading {
+  margin: 10px 0 0;
+  padding: 12px 15px;
+  background-color: #2b6cb0;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.panel-heading:hover {
+  background-color: #2c5282;
+}
+
+.panel {
+  display: none;
+  padding: 5px 15px;
+  border: 1px solid #dde3ea;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+#favorites .btn {
+  margin-top: 15px;
+}

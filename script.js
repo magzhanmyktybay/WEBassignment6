@@ -103,4 +103,18 @@ $(document).ready(function () {
     }
   });
 
+  var githubUrl = "https://github.com/magzhanmyktybay";
+  var telegramUrl = "https://t.me/kyonoky";
+
+  $("#changeLinkBtn").click(function () {
+    if ($("#socialLink").attr("href") === githubUrl) {
+      $("#socialLink").attr("href", telegramUrl).text("Telegram");
+      $(this).text("Switch to GitHub");
+    } else {
+      $("#socialLink").attr("href", githubUrl).text("GitHub");
+      $(this).text("Switch to Telegram");
+    }
+    $("#linkInfo").text("Current link: " + $("#socialLink").attr("href"));
+  });
+
 });

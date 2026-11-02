@@ -27,3 +27,7 @@ I created three clickable headings: "My Favorite Music", "My Favorite Movie" and
 ![Initial skills list](images/image10.png)
 ![Changed skills list](images/image11.png)
 I created a list of four technical skills (HTML, CSS, JavaScript, jQuery) and a text input for a new skill. The "Add Skill" button uses `.append()` to add the skill to the end of the list, and "Prepend Skill" uses `.prepend()` to add it to the beginning. The "Remove Skill" button finds the skill with the same name as in the input and deletes it with `.remove()`. The input value is read with `.val()` and `.trim()`, so empty skills cannot be added.
+### Task 6 Modifying Attributes
+![GitHub link](images/image12.png)
+![Telegram link](images/image13.png)
+I added a social media link to my GitHub profile. The button changes the link's destination with `.attr("href", ...)` to my Telegram, and clicking it again switches back to GitHub. The current link is read with `.attr("href")` and displayed below.

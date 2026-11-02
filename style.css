@@ -2,6 +2,40 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background: #f4f6f8;
+  background-color: #f4f6f8;
   color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border: 1px solid #dde3ea;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+h1 {
+  margin: 0 0 5px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.btn {
+  padding: 8px 16px;
+  margin: 5px 5px 0 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #2b6cb0;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #2c5282;
 }

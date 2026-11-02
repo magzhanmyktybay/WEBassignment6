@@ -9,3 +9,8 @@ We included JQuery by CDN and checked that DOM is fully rendered, at which point
 ![Porfolia light theme](images/image2.png)
 ![Porfolio dark theme](images/image3.png)
 The page shows my name, headline and a short introduction, plus a "Welcome to My Portfolio" section. I used three types of jQuery selectors: tag (`h2`), ID (`#headline`, `#greeting`) and class (`.intro`). The headline is changed with `.text()` and the greeting with `.html()`. The `.css()` method changes the color of all `h2` headings and the font size of `.intro` paragraphs. Two buttons switch between light and dark themes: on `.click()` they use `.css()` to change the colors of the `body` and all `.card` elements.
+## Part 2 jQuery Effects
+### Task 2 Visibility Methods
+![Shown About Me](images/image4.png)
+![Hidden About Me](images/image5.png)
+I created an "About Me" section with a short biography, a status message "Currently learning jQuery!" and a list of fun facts and goals (favorite game, favorite programming language, sports and my career goal). Three buttons control the visibility of the status message and fun facts: `.hide()` hides them, `.show()` shows them again, and `.toggle()` switches between hidden and visible. I passed the "slow" parameter to make the effect smooth. Both elements are selected at once with `$("#status, #funFacts")`.
